@@ -58,6 +58,72 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+## tutor
+
+Jika besok diperlukan saat ujian, karena mengerjakan wajib menggunakan PC lab.
+Cara clone project:
+
+1. buka repository GitHub di browser, copy url repository
+2. buat folder baru di komputer, buka di vs code
+3. buka terminal, jalankan perintah : git clone (url repository), tunggu sampai selesai
+4. masuk ke direktori project, menu file-open folder, pilih folder project
+5. buka terminal, jalankan perintah : composer install, tunggu sampai selesai
+6. buka terminal, jalankan perintah : npm install, tunggu sampai selesai
+7. rename file .env.example menjadi .env, atur konfigurasi database (biasanya di baris 23)
+8. buka terminal, jalankan perintah : php artisan key:generate
+9. buka terminal, jalankan perintah : php artisan migrate
+10. buka terminal, jalankan perintah : php artisan db:seed
+11. buka terminal baru, jalankan perintah : php artisan serve
+12. buka terminal baru, jalankan perintah : npm run dev
+
+disarankan : pakai terminal yang tipenya Command Prompt
+
+## langkah-langkah
+
+• Buat: Lokasi.php ->
+app/Model/Lokasi.php
+
+• Buat: 2026_01_27 210500_create_lokasi_table.php ->
+database/migration/2026 01 27 210500_create_lokasi_table.php
+
+• Buat: LokasiSeeder.php ->
+database/seeder/lokasiseeder.php
+
+• Ubah: DatabaseSeeder.php ->
+database/seeder/databaseseeder.php
+
+• Buat: LocationController.php ->
+app/http/admin/locationcontroller.php
+
+• Ubah: web.php ->
+routes/web.php
+
+• Buat: index.blade.php ->
+resource/view/admin/location/index.blade.php
+
+• Buat: create.blade.php ->
+resource/view/admin/location/create/blade.php
+
+• Buat: edit.blade.php ->
+resource/view/admin/lcoation/edit.blade.php
+
+• Ubah: sidebar.blade.php ->
+resource/view/component/admin/sidebar/blade/php
+
+• Ubah: EventController-php ->
+app/http/controller/admin/eventcontroller.php
+
+• Ubah: create.blade.php ->
+resourcee/view/admin/event/create.blade.php
+
+• Ubah: edit.blade.php ->
+resource/view/admin/event/edit.blade.php
+
+• Ubah: show.blade.php ->
+resource/view/admin/event/create.blade.php
+
+
+
 ##
 1. Pengertian Framework dan Contohnya (TMS)
 Framework adalah kerangka kerja dalam pengembangan aplikasi atau web yang menyediakan struktur dasar, aturan, dan kumpulan library agar proses pengembangan menjadi lebih cepat, terstruktur, dan efisien.
