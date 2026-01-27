@@ -57,3 +57,56 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+##
+1. Pengertian Framework dan Contohnya (TMS)
+Framework adalah kerangka kerja dalam pengembangan aplikasi atau web yang menyediakan struktur dasar, aturan, dan kumpulan library agar proses pengembangan menjadi lebih cepat, terstruktur, dan efisien.
+Framework membantu developer agar tidak perlu menulis kode dari nol serta meminimalkan kesalahan.
+TMS (Transaction Management System) adalah framework/sistem yang digunakan untuk mengelola transaksi, seperti pencatatan data, validasi transaksi, dan pengolahan laporan.
+Contoh framework yang diketahui:
+Laravel (PHP)
+CodeIgniter (PHP)
+Spring (Java)
+Django (Python)
+2. Framework Lama Tidak Support Versi Terbaru
+Jika framework yang digunakan sudah lama dan tidak mendukung versi terbaru, maka yang perlu dilakukan adalah:
+Melakukan upgrade framework ke versi yang lebih baru agar kompatibel dengan sistem terbaru.
+Jika upgrade tidak memungkinkan, maka migrasi ke framework lain yang masih aktif dikembangkan.
+Menyesuaikan kode program agar sesuai dengan standar framework versi terbaru.
+Tujuannya agar aplikasi tetap aman, stabil, dan dapat berjalan di perangkat terbaru.
+3. Solusi Aplikasi Web (TRS) Saat Laptop Mati
+Permasalahan terjadi karena aplikasi berbasis web membutuhkan koneksi online, sementara laptop mati akibat baterai habis.
+Solusi yang dapat dilakukan:
+Menyediakan fitur auto-save agar data tersimpan otomatis.
+Menggunakan local storage atau cache agar data sementara tetap tersimpan.
+Menggunakan server online/cloud, sehingga aplikasi tetap dapat diakses dari perangkat lain.
+Menyediakan UPS atau power bank laptop sebagai antisipasi kehabisan daya.
+Dengan solusi ini, pekerjaan tetap aman dan tidak hilang meskipun perangkat mati.
+4. Kode Program OOP – Class Mobil (IRES)
+Berikut contoh kode program berorientasi objek (OOP) dengan class Mobil yang memiliki atribut dan menggunakan prinsip Inheritance, Encapsulation, dan Class:
+Contoh (PHP):
+<?php
+class Mobil {
+    public string $warna;
+    public string $merk;
+    public int $tahunProduksi;
+
+    public function __construct($warna, $merk, $tahunProduksi) {
+        $this->warna = $warna;
+        $this->merk = $merk;
+        $this->tahunProduksi = $tahunProduksi;
+    }
+
+    public function infoMobil() {
+        return "Mobil ini bermerk $this->merk, berwarna $this->warna, tahun $this->tahunProduksi";
+    }
+}
+
+// Membuat objek
+$mobil1 = new Mobil("Hitam", "Toyota", 2022);
+echo $mobil1->infoMobil();
+?>
+Kode di atas menunjukkan:
+Class: Mobil
+Atribut: warna (String), merk (String), tahunProduksi (Integer)
+Object: $mobil1
